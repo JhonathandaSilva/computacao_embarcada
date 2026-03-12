@@ -7,3 +7,12 @@ Escopo de variáveis
 	Locais - Restritas ao bloco ou função
 		Apos ciclo de utilização o valor é descartado, não deixa rastro.
 		Posso declarar como ESTATICA e usar em mais ciclos de processamento.
+
+
+Tipos de dados do ATmega328P
+
+Comunicação Serial(UART)
+
+Cristal de Quartzo de 20MHz
+
+7 em binário = 0111
