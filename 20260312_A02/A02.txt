@@ -16,3 +16,13 @@ Comunicação Serial(UART)
 Cristal de Quartzo de 20MHz
 
 7 em binário = 0111
+
+Operadores Lógicoss
+	Operadores Bit a Bit (Bitwise)
+		Deslocamento de Bits(Shift)
+if/else  if/ else
+
+switch/case
+
+laços de repetição/ loops)
+	for/while/do while
