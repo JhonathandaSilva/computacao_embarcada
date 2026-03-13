@@ -26,3 +26,49 @@ switch/case
 
 laços de repetição/ loops)
 	for/while/do while
+
+
+Código Arduino para aula 1
+
+/*
+ * Atividade 1: Hello, World! com Contador
+ */
+
+void setup() {
+  // Inicializa a comunicação serial a 9600 bauds
+  Serial.begin(9600);
+
+  // Mensagem de apresentação (executa apenas uma vez)
+  Serial.println("Ola, meu nome é [Aluno]");
+  Serial.println("Iniciando contador de segundos...");
+  Serial.println("----------------------------");
+}
+
+void loop() {
+  // Variável estática mantém o valor entre as execuções do loop
+  static int segundos = 30;
+
+  
+  // Executa apenas enquanto segundos <= 10
+  if (segundos >= 0) {
+	
+
+    
+    // Imprime o valor atual do contador
+    Serial.print("Segundos: ");
+    Serial.println(segundos);
+	
+        if(segundos < 30 && segundos % 5 == 0 ){
+    	Serial.println("Ja se passaram 5 segundos");
+        }
+    // Incrementa o contador
+    segundos--;
+    
+
+
+    // Aguarda 1 segundo (1000 milissegundos)
+    delay(1000);
+  }
+}
+
+link tinkercard:https://www.tinkercad.com/things/7lieadbYAoE/editel?returnTo=%2Fthings%2FflHpOFbJ1CN-arduino-simulator-and
