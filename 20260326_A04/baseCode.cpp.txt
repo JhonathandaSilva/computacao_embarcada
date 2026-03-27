@@ -1,0 +1,33 @@
+const int POTENCIOMETRO = A0;
+const int LED_PWM = 9;
+
+int valorPot = 0;   // 0 - 1023
+int brilhoLED = 0;  // 0 - 255
+
+void setup() {
+    pinMode(LED_PWM, OUTPUT);
+    Serial.begin(9600);
+}
+
+void loop() {
+    // 1. Read analog value (10-bit)
+    valorPot = analogRead(POTENCIOMETRO);
+
+    // 2. Convert 10-bit (0–1023) to 8-bit (0–255)
+    brilhoLED = map(valorPot, 0, 1023, 0, 255);
+
+    // 3. Safety constraint (optional but good practice)
+    brilhoLED = constrain(brilhoLED, 0, 255);
+
+    // 4. Apply PWM to LED
+    analogWrite(LED_PWM, brilhoLED);
+
+    // 5. Debug output (better formatted)
+    Serial.print("Pot: ");
+    Serial.print(valorPot);
+    Serial.print(" | PWM: ");
+    Serial.println(brilhoLED);
+
+    // 6. Small delay for stability
+    delay(50);
+}

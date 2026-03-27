@@ -1,2 +1,15 @@
 Revisão aula 1 e 2.
 Modificador static.
+
+Boas práticas da Computação
+
+Responsábilidade única
+Normas descritivas
+Modularidade
+Protótipos
+
+Tipos de retornos comuns
+void -> executa uma ação sem devolver uma resposta.
+int -> retorna 2 bytes
+bool -> retorna true ou false 1 byte
+float -> retorna 4 bytes, é preciso mas não é rápido
